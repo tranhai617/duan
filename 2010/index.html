@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website chúc mừng Ngày Phụ nữ Việt Nam 20/10 — tri ân, yêu thương và tôn vinh phái đẹp.">
+  <title>20/10 · Ngày Phụ nữ Việt Nam — Tri ân phái đẹp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav glass" id="nav">
+    <a href="#home" class="nav__brand">
+      <span class="nav__logo">20<span class="nav__dot">·</span>10</span>
+      <span class="nav__tag">Phụ nữ Việt Nam</span>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active">Trang chủ</a>
+      <a href="#meaning" class="nav__link">Ý nghĩa</a>
+      <a href="#reasons" class="nav__link">Lý do</a>
+      <a href="#cards" class="nav__link">Lời chúc</a>
+      <a href="#create" class="nav__link">Tạo riêng</a>
+      <a href="#quotes" class="nav__link">Lời nhắn</a>
+    </div>
+    <div class="nav__actions">
+      <button class="music-btn" id="musicBtn" aria-label="Bật hoặc tắt nhạc" title="Nhạc nền">
+        <span class="music-btn__eq"><i></i><i></i><i></i><i></i></span>
+        <span class="music-btn__label">Nhạc</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero__bg" data-parallax="0.25"></div>
+    <div class="hero__orb hero__orb--1" data-parallax="0.45"></div>
+    <div class="hero__orb hero__orb--2" data-parallax="0.65"></div>
+    <div class="hero__orb hero__orb--3" data-parallax="0.35"></div>
+    <div class="hero__ring" data-parallax="0.55"></div>
+    <div class="hero__watermark" data-parallax="0.15">20/10</div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Ngày Phụ nữ Việt Nam</p>
+      <h1 class="hero__title reveal" data-delay="120">
+        <span class="hero__title-num">20</span>
+        <span class="hero__title-slash">/</span>
+        <span class="hero__title-num">10</span>
+      </h1>
+      <div class="hero__ornament reveal" data-delay="240">
+        <span class="line"></span><span class="diamond"></span><span class="line"></span>
+      </div>
+      <p class="hero__subtitle reveal" data-delay="340">
+        Tri ân những người phụ nữ tuyệt vời — người đã dịu dàng tô đẹp đời,
+        kiên cường gánh vác và truyền hơi ấm yêu thương cho mỗi mái nhà Việt.
+      </p>
+      <div class="hero__cta reveal" data-delay="460">
+        <a href="#cards" class="btn btn--gold">Khám phá lời chúc</a>
+        <a href="#create" class="btn btn--ghost">Tạo lời chúc riêng</a>
+      </div>
+      <div class="hero__date reveal" data-delay="580">
+        <span>Thứ Ba</span><i></i><span>20 tháng 10, 2026</span>
+      </div>
+    </div>
+
+    <a href="#meaning" class="hero__scroll" aria-label="Cuộn xuống">
+      <span class="hero__mouse"><span></span></span>
+      <em>Cuộn để khám phá</em>
+    </a>
+  </header>
+
+  <main>
+    <section class="section" id="meaning">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Câu chuyện của ngày đặc biệt</p>
+          <h2 class="section__title">Ý nghĩa ngày <span class="accent">20 tháng 10</span></h2>
+          <div class="hero__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        </div>
+
+        <div class="meaning__grid">
+          <article class="glass meaning__card reveal">
+            <p class="meaning__year">1930</p>
+            <p>
+              Ngày <strong>20 tháng 10 năm 1930</strong>, Đại hội Phụ nữ toàn quốc lần thứ nhất
+              được khai mạc, đánh dấu sự ra đời của Hội Phụ nữ phản đế Việt Nam — nay là
+              Hội Liên hiệp Phụ nữ Việt Nam. Từ đó, ngày này trở thành dịp để cả nước
+              tôn vinh và tri ân phái đẹp.
+            </p>
+            <p>
+              Hơn chín thập kỷ trôi qua, 20/10 không chỉ là ngày hoa hồng và những lời
+              chúc ngọt ngào, mà còn là ngày để chúng ta bày tỏ lòng biết ơn sâu sắc
+              trước sự hy sinh, tảo tần và vẻ đẹp bền vững của người phụ nữ Việt Nam.
+            </p>
+            <blockquote class="meaning__quote">
+              “Phụ nữ là để yêu thương — bằng sự chân thành, bằng sự trân trọng,
+              bằng tất cả những điều tử tế nhất.”
+            </blockquote>
+          </article>
+
+          <div class="stats">
+            <div class="glass stat reveal" data-delay="80">
+              <span class="stat__num" data-count="1930" data-plain="1">0</span>
+              <span class="stat__label">Năm khởi nguồn</span>
+            </div>
+            <div class="glass stat reveal" data-delay="180">
+              <span class="stat__num" data-count="96">0</span>
+              <span class="stat__label">Năm tri ân</span>
+            </div>
+            <div class="glass stat reveal" data-delay="280">
+              <span class="stat__num" data-count="20" data-suffix="/10">0</span>
+              <span class="stat__label">Ngày đặc biệt</span>
+            </div>
+            <div class="glass stat reveal" data-delay="380">
+              <span class="stat__num stat__num--love">∞</span>
+              <span class="stat__label">Yêu thương</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reasons">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Vì sao trân trọng đến thế</p>
+          <h2 class="section__title">Những điều làm nên <span class="accent">phái đẹp</span></h2>
+          <div class="hero__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+        </div>
+
+        <div class="reasons__grid">
+          <article class="glass reason tilt reveal" data-delay="60">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7.5-4.7-9.5-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.5 12c-2 4.3-9.5 9-9.5 9z"/></svg>
+            </div>
+            <h3>Dịu dàng</h3>
+            <p>Một lời an ủi nhẹ nhàng có thể chữa lành muôn vàn vết thương trong lòng.</p>
+          </article>
+          <article class="glass reason tilt reveal" data-delay="120">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l2.6 6.3L21 9.2l-4.7 4.4 1.2 6.4L12 17l-5.5 3 1.2-6.4L3 9.2l6.4-.9z"/></svg>
+            </div>
+            <h3>Mạnh mẽ</h3>
+            <p>Gánh vác gia đình, sự nghiệp và ước mơ bằng một ý chí không dễ khuất phục.</p>
+          </article>
+          <article class="glass reason tilt reveal" data-delay="180">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+            </div>
+            <h3>Rạng rỡ</h3>
+            <p>Nụ cười của phụ nữ là ánh sáng khiến cả căn phòng bừng lên ấm áp.</p>
+          </article>
+          <article class="glass reason tilt reveal" data-delay="240">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c3 3.6 6 6.3 6 10a6 6 0 1 1-12 0c0-3.7 3-6.4 6-10z"/></svg>
+            </div>
+            <h3>Hy sinh</h3>
+            <p>Từng bữa cơm, từng đêm thức trắng — sự tảo tần lặng lẽ mà lớn lao.</p>
+          </article>
+          <article class="glass reason tilt reveal" data-delay="300">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V6.5A2.5 2.5 0 0 1 6.5 4H19v13"/><path d="M6.5 19A2.5 2.5 0 0 1 4 16.5M8 8h7M8 11.5h7"/></svg>
+            </div>
+            <h3>Tinh tế</h3>
+            <p>Hiểu điều chưa nói, cảm điều chưa kể — bằng cả một trái tim đầy yêu thương.</p>
+          </article>
+          <article class="glass reason tilt reveal" data-delay="360">
+            <div class="reason__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v3M12 18v3M5 12H2M22 12h-3M6.3 6.3L4.2 4.2M19.8 19.8l-2.1-2.1M17.7 6.3l2.1-2.1M4.2 19.8l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>Truyền cảm hứng</h3>
+            <p>Người phụ nữ hôm nay viết nên những chương sử rực rỡ của đất nước.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cards">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nhẹ nhàng mở ra</p>
+          <h2 class="section__title">Thiệp chúc <span class="accent">từ trái tim</span></h2>
+          <div class="hero__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+          <p class="section__desc">Chạm vào từng tấm thiệp để lộ lời chúc ẩn giấu phía sau.</p>
+        </div>
+
+        <div class="cards__grid">
+          <article class="flip reveal" data-delay="60" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">01</span>
+                <div class="flip__flower">❀</div>
+                <h3>Gửi Mẹ</h3>
+                <p>Nguồn gốc của mọi yêu thương</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Mẹ ơi, con chẳng thể tìm được từ nào đủ đẹp để nói về mẹ. Cảm ơn mẹ vì đã cho con cuộc sống, cho con một nơi để luôn trở về. Chúc mẹ tuổi 20/10 luôn khỏe mạnh, bình an và cười thật nhiều.”</p>
+                <span class="flip__sign">— Yêu mẹ nhiều nhất</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" data-delay="120" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">02</span>
+                <div class="flip__flower">✿</div>
+                <h3>Gửi Người ấy</h3>
+                <p>Người làm tim mình dịu lại</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Gặp em là điều may mắn nhất đời anh. Cảm ơn em vì đã luôn dịu dàng, kiên nhẫn và rực rỡ theo cách của riêng em. 20/10 vui nhé, người anh thương!”</p>
+                <span class="flip__sign">— Từ người luôn thương em</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" data-delay="180" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">03</span>
+                <div class="flip__flower">❃</div>
+                <h3>Gửi Chị gái</h3>
+                <p>Người bạn đời của tuổi thơ</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Cảm ơn chị đã luôn nhường em, che chở em và trở thành tấm gương để em noi theo. Chúc chị ngày 20/10 thật nhiều niềm vui, công việc hanh thông và luôn xinh đẹp nhé!”</p>
+                <span class="flip__sign">— Từ em trai/em gái nhỏ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" data-delay="240" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">04</span>
+                <div class="flip__flower">✾</div>
+                <h3>Gửi Bạn thân</h3>
+                <p>Đồng minh trong mọi cuộc đời</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Cảm ơn bạn vì đã luôn ở đây, kể cả những ngày mình khóc, mình cười, mình điên cùng nhau. Chúc bạn 20/10 thật rực rỡ — và hẹn nhau thật nhiều chuyến đi nữa nhé!”</p>
+                <span class="flip__sign">— Bạn thân nhất hành tinh</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" data-delay="300" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">05</span>
+                <div class="flip__flower">❀</div>
+                <h3>Gửi Đồng nghiệp</h3>
+                <p>Người同行 mỗi ngày</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Chúc chị/em một ngày 20/10 tràn ngập niềm vui và những lời chúc dễ thương. Cảm ơn vì đã luôn hỗ trợ, mang năng lượng tích cực đến góc làm việc nhỏ này!”</p>
+                <span class="flip__sign">— Từ đồng nghiệp quý mến</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" data-delay="360" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__front glass">
+                <span class="flip__num">06</span>
+                <div class="flip__flower">✿</div>
+                <h3>Gửi Tất cả nàng</h3>
+                <p>Phụ nữ Việt Nam đáng yêu nhất</p>
+                <em class="flip__hint">Chạm để mở</em>
+              </div>
+              <div class="flip__back glass">
+                <p>“Chúc toàn thể phụ nữ Việt Nam một ngày 20/10 hạnh phúc ngập tràn. Hãy nhớ rằng: thế giới này tươi đẹp hơn vì có bạn. Đừng bao giờ thôi rực rỡ nhé!”</p>
+                <span class="flip__sign">— Với tất cả sự trân trọng</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="create">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Độc quyền của riêng bạn</p>
+          <h2 class="section__title">Tạo <span class="accent">lời chúc riêng</span></h2>
+          <div class="hero__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+          <p class="section__desc">Nhập tên, chọn người thương yêu và để chúng tôi viết nên lời chúc từ trái tim bạn.</p>
+        </div>
+
+        <div class="create__grid">
+          <form class="glass create__form reveal" id="wishForm">
+            <label class="field">
+              <span>Tên người nhận</span>
+              <input type="text" id="recipient" placeholder="Ví dụ: Mẹ, Chị Lan, Emma..." maxlength="24" required>
+            </label>
+            <label class="field">
+              <span>Người thân yêu</span>
+              <select id="relation">
+                <option value="mom">Mẹ</option>
+                <option value="lover">Người yêu / Vợ</option>
+                <option value="sister">Chị / Em gái</option>
+                <option value="friend">Bạn thân</option>
+                <option value="colleague">Đồng nghiệp</option>
+                <option value="teacher">Cô giáo / Sư cô</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Cảm xúc bạn muốn gửi</span>
+              <select id="tone">
+                <option value="tender">Dịu dàng, chân thành</option>
+                <option value="romantic">Ngọt ngào, lãng mạn</option>
+                <option value="fun">Hài hước, dễ thương</option>
+                <option value="formal">Lịch sự, trang trọng</option>
+              </select>
+            </label>
+            <div class="create__btns">
+              <button type="submit" class="btn btn--gold">Tạo lời chúc</button>
+              <button type="button" class="btn btn--ghost" id="copyBtn">Sao chép</button>
+            </div>
+          </form>
+
+          <div class="glass create__preview reveal" data-delay="160">
+            <div class="preview__card" id="previewCard">
+              <p class="preview__eyebrow">Ngày Phụ nữ Việt Nam · 20/10</p>
+              <p class="preview__text" id="previewText">
+                Hãy nhập tên và chọn người thương yêu để nhận được lời chúc được viết riêng cho họ.
+              </p>
+              <div class="preview__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+              <p class="preview__sign">— Với tất cả yêu thương ♥</p>
+            </div>
+            <p class="preview__toast" id="copyToast">Đã sao chép lời chúc!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="eyebrow">Những lời nhắn dễ thương</p>
+          <h2 class="section__title">Gửi tới <span class="accent">người phụ nữ</span> của tôi</h2>
+        </div>
+
+        <div class="quotes reveal" id="quotesBox">
+          <span class="quotes__mark">“</span>
+          <div class="quotes__viewport">
+            <blockquote class="quote active">
+              <p>Phụ nữ đẹp nhất khi họ là chính mình — không giấu giếm, không gượng ép, chỉ dịu dàng sống với trái tim chân thành.</p>
+              <cite>— Lời tri ân 20/10</cite>
+            </blockquote>
+            <blockquote class="quote">
+              <p>Gửi mẹ, gửi chị, gửi em và gửi tất cả những người phụ nữ: thế giới này tốt đẹp hơn vì có các bạn.</p>
+              <cite>— Từ tận đáy lòng</cite>
+            </blockquote>
+            <blockquote class="quote">
+              <p>Một bông hồng, một lời chúc, một cái ôm — đôi khi đủ để một ngày của họ trở nên rực rỡ.</p>
+              <cite>— 20 tháng 10</cite>
+            </blockquote>
+            <blockquote class="quote">
+              <p>Hạnh phúc không phải là đi tìm một người hoàn hảo, mà là học cách trân trọng người phụ nữ luôn ở bên mình.</p>
+              <cite>— Trái tim biết ơn</cite>
+            </blockquote>
+          </div>
+          <div class="quotes__dots" id="quoteDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="container">
+        <div class="glass finale__card reveal">
+          <p class="finale__script">Cảm ơn vì đã là bạn</p>
+          <h2 class="finale__title">Chúc phái đẹp Việt Nam<br>một ngày <span class="accent">20/10</span> tràn ngập yêu thương</h2>
+          <div class="hero__ornament"><span class="line"></span><span class="diamond"></span><span class="line"></span></div>
+          <div class="finale__cta">
+            <button class="btn btn--gold" id="confettiBtn">Gửi một rừng hoa</button>
+            <a href="#home" class="btn btn--ghost">Trở lại đầu trang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">20<span class="nav__dot">·</span>10</span>
+        <p>Tri ân · Yêu thương · Tôn vinh</p>
+      </div>
+      <p class="footer__note">Được tạo bằng cả trái tim cho Ngày Phụ nữ Việt Nam.</p>
+      <p class="footer__copy">© 2026 · 20/10 Vietnamese Women's Day</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
